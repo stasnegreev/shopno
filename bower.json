@@ -1,0 +1,24 @@
+{
+  "name": "NewProject",
+  "description": "New interesting project",
+  "main": "index.js",
+  "authors": [
+    "author"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "reset-css": "^2.2.1",
+    "fancybox": "^3.2.5",
+    "owl.carousel": "^2.2.1",
+    "bPopup": "bpopup#^0.11.0",
+    "animate.css": "^3.5.2",
+    "wow": "wowjs#^1.1.2",
+    "popper.js": "^1.16.0"
+  }
+}
