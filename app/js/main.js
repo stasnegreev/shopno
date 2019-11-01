@@ -1,24 +1,31 @@
-
-// ;$(document).ready(function() {
-
-//   // отправка почты
-//   $(".send").submit(function() {
-//       var th = $(this);
-//       $.ajax({
-//           type: "POST",
-//           url: "../php/mail.php",
-//           data: th.serialize(),
-//           success: function(json) {
-//               th.hide();
-//               $(".jsFormPopup + .success").fadeIn();
-//                   setTimeout(function() {
-//                   th.trigger("reset");
-//               }, 1000);
-//           },
-//           error: function(json) {
-//               console.log('error', json);
-//           },
-//       });
-//       return false;
-//   });
-// });
+document.onreadystatechange = function () {
+    if (document.readyState === "complete") {
+        initApplication();
+    }
+}
+function initApplication() {
+    $(document).ready(function() {
+        $('#worksRow').bind('click', function (e) {
+            // Prevents the default action to be triggered.
+            const bpopapImg = 'img/' + e.target.id + '.png';
+            let workBig = document.querySelector('#workBig img');
+            console.log('workBig=', workBig);
+            let s = workBig.getAttribute('src');
+            console.log('s=', s);
+           workBig.setAttribute('src', bpopapImg);
+            s = workBig.getAttribute('src');
+            console.log('s=', s);
+            e.preventDefault();
+            // Triggering bPopup when click event is fired
+            $('#workBig').bPopup({
+                amsl: 0,
+                modalClose: true,
+                opacity: 0.6,
+                //easing: 'easeOutBack', //uses jQuery easing plugin
+                speed: 450,
+                transition: 'slideDown',
+                closeClass: 'videoClosed',
+            });
+        });
+    });
+};

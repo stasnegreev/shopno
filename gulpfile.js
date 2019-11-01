@@ -62,8 +62,7 @@ gulp.task('minify', ['sass', 'sprite'], function() {
 gulp.task('scripts:libs', function() {
   return gulp.src([
       'node_modules/jquery/dist/jquery.min.js',
-      'bower_components/popper.js/dist/popper.min.js',
-      'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+      'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
       'node_modules/@fortawesome/fontawesome-free/js/all.min.js',
 
     // 'bower_components/jquery/dist/jquery.min.js',
@@ -81,7 +80,7 @@ gulp.task('scripts:min', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/js'));
 });
-gulp.task('scripts', ['scripts:min', /*'scripts:libs'*/], function() {
+gulp.task('scripts', ['scripts:min', 'scripts:libs'], function() {
   return gulp.src('app/js/main.js')
     .pipe(babel({
       presets: ['es2015']
