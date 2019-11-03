@@ -15,7 +15,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat:400,500,700|Raleway:400,500,700&display=swap" rel="stylesheet">
 	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
--->
+--><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="css/libs.min.css?v=1.0"> -->
     <link rel="stylesheet" href="css/libs.min.css?v=1.0">
     <link rel="stylesheet" href="css/main.min.css?v=1.0">
@@ -60,17 +60,18 @@
 		<section class="billboard" id="billboard">
 			<div class="container">
 			        <div class="row">
-			                <div class="col-12">
+			                <div class="col-12 content">
 			                        <div class="text">
 			                                <p>Say Hello to SHOPNO!</p>
 			                                <p>agency CORPORATE SHOPNO Theme</p>
 			
 			                        </div>
-			                        <div class="button">
+			                        <div class="button" data-aos="fade-up"
+			                             >
 			                                CONTACT US
 			                        </div>
-			                        <div class="pin">
-			
+			                        <div class="juiceGlass">
+			                                <a href="#contacts" class="icon icon-juiceGlass"></a>
 			                        </div>
 			                </div>
 			        </div>
@@ -190,11 +191,6 @@
 			            </div>
 			            -->
 			        </div>
-			        <div id="workBig" class="">
-			            <div class="big_works works__item_1">
-			                <img src="img/work2.png">
-			            </div>
-			        </div>
 		</section>
 		<section class="services" id="services">
 			
@@ -206,80 +202,114 @@
 			                Lorem ipsum dolor sit amet event landing template
 			            </div>
 			        </div>
-			        <div class="services__grid">
-			            <div class="container">
-			                <div class="row">
-			                    <div class="col-md-7 col-12 services__item services__item_main">
-			                        <h3>
-			                            Designing is The CooL LOVE FOR.
-			                        </h3>
-			                        <p>
-			                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
-			                        </p>
-			                    </div>
-			                    <div class="col-md-5 col-12 services__item services__item_secondary service_1">
+			        <div class="services__container">
+			            <div id="serviceGrid" class="services__grid">
+			                <div class="services__row">
+			                    <div class=" services__item services__item_normal service_1">
 			                        <h3>
 			                            cool psd Design
 			                        </h3>
 			                        <p>
 			                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
 			                        </p>
-			                        <div class="button">
-			                            <span>Know More</span>
-			                            <span class="icon"></span>
+			                        <div class="button button__more">
+			                            <span>Know More  </span>
+			                            <i class="icon icon-arr_more"></i>
+			
+			                        </div>
+			                        <div class="button button__x">
+			                            <i class="icon icon-X"></i>
 			                        </div>
 			                    </div>
-			                    <div class="col-md-7 col-12 services__item services__item_secondary service_2">
+			                    <div class=" services__item services__item_normal service_2">
 			                        <h3>
 			                            cool psd Design
 			                        </h3>
 			                        <p>
 			                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
 			                        </p>
-			                        <div class="button">
-			                            <span>Know More</span>
-			                            <span class="icon"></span>
+			                        <div class="button button__more">
+			                            <span>Know More  </span>
+			                            <i class="icon icon-arr_more"></i>
+			
+			                        </div>
+			                        <div class="button button__x">
+			                            <i class="icon icon-X"></i>
 			                        </div>
 			                    </div>
-			                    <div class="col-md-5 col-12 services__item services__item_secondary service_3">
+			                </div>
+			                <div class="services__row">
+			                    <div class=" services__item services__item_normal service_3">
 			                        <h3>
 			                            cool psd Design
 			                        </h3>
 			                        <p>
 			                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
 			                        </p>
-			                        <div class="button">
-			                            <span>Know More</span>
-			                            <span class="icon"></span>
+			                        <div class="button button__more">
+			                            <span>Know More  </span>
+			                            <i class="icon icon-arr_more"></i>
+			
+			                        </div>
+			                        <div class="button button__x">
+			                            <i class="icon icon-X"></i>
 			                        </div>
 			                    </div>
-			                    <div class="col-md-5 col-12 services__item services__item_secondary service_4">
+			                    <div class=" services__item services__item_normal service_4">
 			                        <h3>
 			                            cool psd Design
 			                        </h3>
 			                        <p>
 			                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
 			                        </p>
-			                        <div class="button">
-			                            <span>Know More</span>
-			                            <span class="icon"></span>
+			                        <div class="button button__more">
+			                            <span>Know More  </span>
+			                            <i class="icon icon-arr_more"></i>
+			
+			                        </div>
+			                        <div class="button button__x">
+			                            <i class="icon icon-X"></i>
 			                        </div>
 			                    </div>
-			                    <div class="col-md-7 col-12 services__item services__item_secondary service_5">
+			                </div>
+			                <div class="services__row">
+			                    <div class=" services__item services__item_normal service_5">
 			                        <h3>
 			                            cool psd Design
 			                        </h3>
 			                        <p>
 			                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
 			                        </p>
-			                        <div class="button">
-			                            <span>Know More</span>
-			                            <span class="icon"></span>
+			                        <div class="button button__more">
+			                            <span>Know More  </span>
+			                            <i class="icon icon-arr_more"></i>
+			
+			                        </div>
+			                        <div class="button button__x">
+			                            <i class="icon icon-X"></i>
+			                        </div>
+			                    </div>
+			                    <div class=" services__item services__item_normal service_6">
+			                        <h3>
+			                            cool psd Design
+			                        </h3>
+			                        <p>
+			                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+			                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+			                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+			
+			                        </p>
+			                        <div class="button button__more">
+			                            <span>Know More  </span>
+			                            <i class="icon icon-arr_more"></i>
+			
+			                        </div>
+			                        <div class="button button__x">
+			                            <i class="icon icon-X"></i>
 			                        </div>
 			                    </div>
 			                </div>
 			            </div>
-			
 			        </div>
 		</section>
 
@@ -298,81 +328,104 @@
 			                <div class="row">
 			                    <div class="col-lg-4 col-6 team__item team1">
 			                        <div class="team__item__note">
-			                            <h4>
-			                                AL RAYNAH<span>/UI  Designer</span>
-			                            </h4>
-			                            <p>
-			                                Lorem Ipsum is not simply is  an action designer random text
-			                                It has roots in a piece.
-			                            </p>
-			                            <div class="social">
-			
+			                            <div class="team__item__note_content">
+			                                <img src="img/icons/shape.png">
+			                                <h4>
+			                                    AL RAYNAH<span>/UI  Designer</span>
+			                                </h4>
+			                                <p>
+			                                    Lorem Ipsum is not simply is  an action designer random text
+			                                    It has roots in a piece.
+			                                </p>
+			                                <div class="social">
+			                                    Lorem Ip
+			                                </div>
 			                            </div>
 			                        </div>
+			
 			                    </div>
 			                    <div class="col-lg-4 col-6 team__item team2">
 			                        <div class="team__item__note">
-			                            <img src="img/icons/shape.png">
-			                            <h4>
-			                                AL RAYNAH<span>/UI  Designer</span>
-			                            </h4>
-			                            <p>
-			
-			                            </p>
-			                            <div class="social">
-			
+			                            <div class="team__item__note_content">
+			                                <img src="img/icons/shape.png">
+			                                <h4>
+			                                    AL RAYNAH<span>/UI  Designer</span>
+			                                </h4>
+			                                <p>
+			                                    Lorem Ipsum is not simply is  an action designer random text
+			                                    It has roots in a piece.
+			                                </p>
+			                                <div class="social">
+			                                    Lorem Ip
+			                                </div>
 			                            </div>
 			                        </div>
 			                    </div>
 			                    <div class="col-lg-4 col-6 team__item team3">
 			                        <div class="team__item__note">
-			                            <h4>
-			                                AL RAYNAH<span>/UI  Designer</span>
-			                            </h4>
-			                            <p>
-			
-			                            </p>
-			                            <div class="social">
-			
+			                            <div class="team__item__note_content">
+			                                <img src="img/icons/shape.png">
+			                                <h4>
+			                                    AL RAYNAH<span>/UI  Designer</span>
+			                                </h4>
+			                                <p>
+			                                    Lorem Ipsum is not simply is  an action designer random text
+			                                    It has roots in a piece.
+			                                </p>
+			                                <div class="social">
+			                                    Lorem Ip
+			                                </div>
 			                            </div>
 			                        </div>
 			                    </div>
 			                    <div class="col-lg-4 col-6 team__item team4">
 			                        <div class="team__item__note">
-			                            <h4>
-			                                AL RAYNAH<span>/UI  Designer</span>
-			                            </h4>
-			                            <p>
-			
-			                            </p>
-			                            <div class="social">
-			
+			                            <div class="team__item__note_content">
+			                                <img src="img/icons/shape.png">
+			                                <h4>
+			                                    AL RAYNAH<span>/UI  Designer</span>
+			                                </h4>
+			                                <p>
+			                                    Lorem Ipsum is not simply is  an action designer random text
+			                                    It has roots in a piece.
+			                                </p>
+			                                <div class="social">
+			                                    Lorem Ip
+			                                </div>
 			                            </div>
 			                        </div>
 			                    </div>
 			                    <div class="col-lg-4 col-6 team__item team5">
 			                        <div class="team__item__note">
-			                            <h4>
-			                                AL RAYNAH<span>/UI  Designer</span>
-			                            </h4>
-			                            <p>
-			
-			                            </p>
-			                            <div class="social">
-			
+			                            <div class="team__item__note_content">
+			                                <img src="img/icons/shape.png">
+			                                <h4>
+			                                    AL RAYNAH<span>/UI  Designer</span>
+			                                </h4>
+			                                <p>
+			                                    Lorem Ipsum is not simply is  an action designer random text
+			                                    It has roots in a piece.
+			                                </p>
+			                                <div class="social">
+			                                    Lorem Ip
+			                                </div>
 			                            </div>
 			                        </div>
 			                    </div>
 			                    <div class="col-lg-4 col-6 team__item team1">
 			                        <div class="team__item__note">
-			                            <h4>
-			                                AL RAYNAH<span>/UI  Designer</span>
-			                            </h4>
-			                            <p>
-			
-			                            </p>
-			                            <div class="social">
-			
+			                            <div class="team__item__note_content">
+			                                <img src="img/icons/shape.png">
+			                                <h4>
+			                                    AL RAYNAH<span>/UI  Designer</span>
+			                                </h4>
+			                                <p>
+			                                    Lorem Ipsum is not simply is  an action designer random text
+			                                    It has roots in a piece.
+			                                </p>
+			                                <div class="social">
+			                                    Lorem Ip
+			                                </div>
 			                            </div>
 			                        </div>
 			                    </div>
@@ -495,7 +548,7 @@
 			</div>
 		</section>
 
-		<section class="contacts" id="contacts">
+		<section  class="contacts" id="contacts">
 			
 			    <div class="contacts__container">
 			
@@ -549,11 +602,18 @@
 		</footer>
 
 	</div>
+	<div id="workBig" class="big_works">
+
+			<img id="workBigImg" src="img/work2.png">
+
+	</div>
 
 	<!-- JS -->
 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script type="module" src="js/libs.min.js?v=1.0"></script>
 
 	<script src="js/main.min.js?v=1.0"></script>
+
 </body>
 </html>

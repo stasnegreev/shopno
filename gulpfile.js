@@ -64,6 +64,7 @@ gulp.task('scripts:libs', function() {
       'node_modules/jquery/dist/jquery.min.js',
       'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
       'node_modules/@fortawesome/fontawesome-free/js/all.min.js',
+      //'node_modules/aos/dist/aos.js',
 
     // 'bower_components/jquery/dist/jquery.min.js',
      'bower_components/bPopup/jquery.bpopup.min.js',
