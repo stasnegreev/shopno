@@ -53,5 +53,16 @@ function initApplication() {
             }
         }
     });
+    $('#carouselPrev').on('click', function (e) {
+        $('#carousel2').carousel('prev');
+    })
+    $('#carouselNext').on('click', function (e) {
+        $('#carousel2').carousel('next');
+    })
+    $('#carousel2').on('slide.bs.carousel', function (e) {
+        document.querySelector(`#indicator${e.to}`).classList.toggle('active');
+        document.querySelector(`#indicator${e.from}`).classList.toggle('active');
+
+    })
 
 };
