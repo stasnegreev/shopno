@@ -13,7 +13,6 @@ function initApplication() {
         e.preventDefault();
         return false;
     });
-    //AOS.init();
     $(document).ready(function() {
         $('#worksRow').bind('click', function (e) {
             // Prevents the default action to be triggered.
