@@ -1215,6 +1215,7 @@ p {
         margin-bottom: 24px;
         border-bottom: #fff solid 1px; }
         .contacts .contacts__container .contacts__form .contacts__form__item label {
+          white-space: nowrap;
           color: #C4C7CA;
           font-family: Raleway;
           font-size: 15px;
@@ -1223,8 +1224,10 @@ p {
           letter-spacing: normal;
           margin-bottom: 0px; }
         .contacts .contacts__container .contacts__form .contacts__form__item input {
+          width: 100%;
           border: none;
-          background: repeat; }
+          background: repeat;
+          padding-left: 10px; }
         .contacts .contacts__container .contacts__form .contacts__form__item input:focus {
           outline: none; }
       .contacts .contacts__container .contacts__form .contacts__form__massege {
@@ -1235,6 +1238,7 @@ p {
         width: 100%;
         margin: 0 0 38px 0; }
         .contacts .contacts__container .contacts__form .contacts__form__massege textarea {
+          padding-left: 10px;
           width: 100%;
           height: 95px;
           vertical-align: top;

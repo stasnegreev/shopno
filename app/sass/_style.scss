@@ -925,14 +925,16 @@ p {margin-bottom: 10px;}
         margin-bottom: 24px;
         border-bottom: #fff solid 1px;
         label{
-
+          white-space: nowrap;
           @include font-type(#C4C7CA, Raleway, 15px, regular, normal, normal);
           margin-bottom: 0px;
         }
 
         input {
+          width: 100%;
           border: none;
           background: repeat;
+          padding-left: 10px;
         }
         input:focus{
           outline:none;
@@ -943,6 +945,7 @@ p {margin-bottom: 10px;}
         width: 100%;
         margin: 0 0 38px 0;
         textarea{
+          padding-left: 10px;
           width: 100%;
           height: 95px;
           vertical-align: top;
