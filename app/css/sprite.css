@@ -18,37 +18,37 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-X {
   background-image: url(sprite.png);
-  background-position: -121px -24px;
+  background-position: -74px -21px;
   width: 18px;
   height: 18px;
 }
 .icon-arr_l {
   background-image: url(sprite.png);
-  background-position: -121px -58px;
+  background-position: -74px -55px;
   width: 11px;
   height: 19px;
 }
 .icon-arr_more {
   background-image: url(sprite.png);
-  background-position: -121px -42px;
+  background-position: -74px -39px;
   width: 16px;
   height: 16px;
 }
 .icon-arr_r {
   background-image: url(sprite.png);
-  background-position: -132px -58px;
+  background-position: -85px -55px;
   width: 11px;
   height: 19px;
 }
 .icon-juiceGlass {
   background-image: url(sprite.png);
   background-position: 0px 0px;
-  width: 121px;
-  height: 156px;
+  width: 74px;
+  height: 83px;
 }
 .icon-menu {
   background-image: url(sprite.png);
-  background-position: -121px 0px;
-  width: 24px;
-  height: 24px;
+  background-position: -74px 0px;
+  width: 30px;
+  height: 21px;
 }

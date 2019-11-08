@@ -25,11 +25,12 @@ function initApplication() {
             // Triggering bPopup when click event is fired
             $('#workBig').bPopup({
                 amsl: 0,
+                positionStyle: 'fixed',
                 modalClose: true,
                 opacity: 0.6,
                 speed: 450,
                 transition: 'slideDown',
-                closeClass: 'videoClosed',
+                closeClass: 'big_works__closed',
             });
         });
     });
