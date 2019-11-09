@@ -387,11 +387,10 @@ p {margin-bottom: 10px;}
           position: relative;
           display: flex;
           flex-direction: column;
-          padding: 30px 61px 50px;
           background-size: cover;
           background-position: center center;
           border: #F8FAFA solid 5px;
-          transition: all 0.3s ease 0s;
+          transition: all 0.7s ease 0s;
           h3{
             position: relative;
             z-index: 2;
@@ -417,7 +416,6 @@ p {margin-bottom: 10px;}
               @include font-type(#EBEBEB, Raleway, 18px, medium, normal, normal);
               text-transform: uppercase;
               margin-right: 15px;
-
             }
           }
           .button__x{
@@ -429,9 +427,9 @@ p {margin-bottom: 10px;}
             border: 3px solid transparent;
 
           }
-
         }
         .services__item_normal{
+          padding: 30px 61px 50px;
           position: relative;
           padding-top: 149px;
           p{
@@ -443,6 +441,7 @@ p {margin-bottom: 10px;}
           }
           .button__more{
             visibility: visible;
+
           }
         }
         .services__item_normal:after {
@@ -490,8 +489,10 @@ p {margin-bottom: 10px;}
           width:58%;
         }
         .services__item_active{
-          padding-top: 60px;
-          padding-bottom: 74px;
+          padding: 30px 61px 50px;
+          @include respond-to(md) {
+            padding: 10px 10px 50px;
+          }
           .button__more{
             visibility: hidden;
             color: black;
@@ -499,7 +500,6 @@ p {margin-bottom: 10px;}
           .button__x{
             visibility: visible;
           }
-
           h3{
             color: #1D4B47;
           }
@@ -512,11 +512,16 @@ p {margin-bottom: 10px;}
             overflow: hidden;
 
           }
-          //background-image: none;
-          //background-color: #6FF4E9;
+          @include respond-to(md) {
+            h3 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
         }
         .services__item_active:after{
-          //opacity: 0;
           content: '\A';
           height: 100%;
           width: 100%;
@@ -527,11 +532,11 @@ p {margin-bottom: 10px;}
           left: 0px;
           position: absolute;
           z-index: 1;
-          transition: all 0.3s ease 0s;
+          transition: all 0.7s ease 0s;
         }
         @include respond-to(xs) {
           flex-direction: column;
-          .services__item{
+          .services__item {
             width: 100%;
           }
         }
@@ -931,6 +936,7 @@ p {margin-bottom: 10px;}
         }
 
         input {
+          @include font-type(#C4C7CA, Raleway, 15px, regular, normal, normal);
           width: 100%;
           border: none;
           background: repeat;

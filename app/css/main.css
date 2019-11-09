@@ -565,12 +565,11 @@ p {
           -webkit-flex-direction: column;
           -ms-flex-direction: column;
           flex-direction: column;
-          padding: 30px 61px 50px;
           background-size: cover;
           background-position: center center;
           border: #F8FAFA solid 5px;
-          -webkit-transition: all 0.3s ease 0s;
-          transition: all 0.3s ease 0s; }
+          -webkit-transition: all 0.7s ease 0s;
+          transition: all 0.7s ease 0s; }
           .services .services__container .services__grid .services__row .services__item h3 {
             position: relative;
             z-index: 2;
@@ -619,6 +618,7 @@ p {
             left: 45px;
             border: 3px solid transparent; }
         .services .services__container .services__grid .services__row .services__item_normal {
+          padding: 30px 61px 50px;
           position: relative;
           padding-top: 149px; }
           .services .services__container .services__grid .services__row .services__item_normal p {
@@ -666,8 +666,10 @@ p {
           height: 373px;
           width: 58%; }
         .services .services__container .services__grid .services__row .services__item_active {
-          padding-top: 60px;
-          padding-bottom: 74px; }
+          padding: 30px 61px 50px; }
+          @media only screen and (max-width: 1199px) {
+            .services .services__container .services__grid .services__row .services__item_active {
+              padding: 10px 10px 50px; } }
           .services .services__container .services__grid .services__row .services__item_active .button__more {
             visibility: hidden;
             color: black; }
@@ -686,6 +688,11 @@ p {
             color: #29625D;
             height: auto;
             overflow: hidden; }
+          @media only screen and (max-width: 1199px) {
+            .services .services__container .services__grid .services__row .services__item_active h3 {
+              font-size: 16px; }
+            .services .services__container .services__grid .services__row .services__item_active p {
+              font-size: 12px; } }
         .services .services__container .services__grid .services__row .services__item_active:after {
           content: '\A';
           height: 100%;
@@ -697,8 +704,8 @@ p {
           left: 0px;
           position: absolute;
           z-index: 1;
-          -webkit-transition: all 0.3s ease 0s;
-          transition: all 0.3s ease 0s; }
+          -webkit-transition: all 0.7s ease 0s;
+          transition: all 0.7s ease 0s; }
         @media only screen and (max-width: 767px) {
           .services .services__container .services__grid .services__row {
             -webkit-box-orient: vertical;
@@ -1225,6 +1232,12 @@ p {
           letter-spacing: normal;
           margin-bottom: 0px; }
         .contacts .contacts__container .contacts__form .contacts__form__item input {
+          color: #C4C7CA;
+          font-family: Raleway;
+          font-size: 15px;
+          font-weight: regular;
+          line-height: normal;
+          letter-spacing: normal;
           width: 100%;
           border: none;
           background: repeat;
